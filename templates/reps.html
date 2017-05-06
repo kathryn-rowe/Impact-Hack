@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}Homepage{% endblock %}
+{% block nav_reps %}active{% endblock %}
+
+{% block content %}
+<h2>Representatives</h2>
+<ul>
+      {% for rep in reps %}
+          <li>
+              <a href="/rep/{{ rep.rep_id }}">
+                {{ rep.rep_id }} {{ rep.name }}
+              </a>
+          </li>
+      {% endfor %}
+    </ul>
+
+{% endblock %}
