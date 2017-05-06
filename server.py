@@ -31,10 +31,10 @@ def register_process():
 
     first_name = request.form.get('first_name')
     last_name = request.form.get('last_name')
-    password = request.form.get('password')
-    zipcode = request.form.get('zipcode')
     email = request.form.get('e-mail')
+    zipcode = request.form.get('zipcode')
     registration_num = request.form.get('registration_num')
+    password = request.form.get('password')
 
     emails = User.query.filter(User.email == email).first()
 
@@ -76,22 +76,25 @@ def login_form():
 def login_process():
     """Process Log-in, checking password"""
 
-    username = request.form.get('username')
+    email = request.form.get('email')
     password = request.form.get('password')
 
-    message = validate_login(username, password)
+    user_email = User.query.filter(User.email == email).first()
 
-    if type(message) is str:
-        flash(message)
+    if email is None:
+        flash("No such email address. Please register")
+        return redirect('/register')
+
+    elif user_email.password != password:
+        flash("Incorrect password.")
         return redirect("/login")
-    else:
-        user = message
-        flash(("%s Logged In!") % (username))
-        session['user_id'] = user.user_id
-        if user.lat is not None:
-            update_session(user.lat, user.lon)
 
-    return redirect("/users/" + str(user.user_id))
+    else:
+        session['user_id'] = "logged in"
+        user_id = user_email.user_id
+        flash("Logged in.")
+
+        return redirect("/user_info/" + str(user_id))
 
 
 # @app.route("/registration")
@@ -118,16 +121,14 @@ def logout_process():
     return redirect('/login')
 
 
-# @app.route("/users/<user_id>")
-# def show_user(user_id):
-#     """Show info about a user"""
+@app.route("/users/<user_id>")
+def show_user(user_id):
+    """Show info about a user"""
 
-#     user = User.query.filter_by(user_id=user_id).one()
+    user = User.query.filter(User.user_id == user_id).first()
 
-#     return render_template("user_info.html",
-#                            user=user,
-#                            stars=star_dict,
-#                            secret=SECRET)
+    return render_template("user_info.html",
+                           user=user)
 
 
 @app.route("/reps")

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}User Info{% endblock %}
+{% block nav_login %}active{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+            <h2>User</h2>
+                <p>User Id:{{ user.user_id }}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
