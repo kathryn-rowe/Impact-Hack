@@ -154,10 +154,10 @@ if __name__ == "__main__":  # pragma: no cover
 
     # while developing/debugging *********
     app.debug = True
-    app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
+    # app.config['DEBUG_TB_INTERCEPT_REDIRECTS'] = False
     app.jinja_env.auto_reload = app.debug  # make sure templates, etc. are not cached in debug mode
     #***********************************
-
+    connect_to_db(app)
     # connect_to_db(app, os.environ.get("DATABASE_URL", "postgresql:///"))
 
     # db.create_all(app=app)

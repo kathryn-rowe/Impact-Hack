@@ -1,0 +1,15 @@
+img {
+    height: 300px;
+}
+
+body {
+    font-family: Helvetica sans-serif;
+}
+
+input {
+    margin: 10px;
+}
+
+form {
+    margin-left: 300px;
+}
