@@ -80,26 +80,26 @@ def register_process():
     emails = User.query.filter(User.email == email).first()
 
     if emails is None:
-        email = username
+
         new_user = User(first_name=first_name,
                         last_name=last_name,
                         email=email,
                         password=password,
-                        zipcode=zipcode)
+                        zipcode=zipcode,
+                        registration_num=registration_num)
 
         db.session.add(new_user)
 
         db.session.commit()
         user_id = new_user.user_id
-        session["logged_in"] = username
+        session['user_id'] = "logged_in"
 
         # print "We just create the user"
         flash("Thank you for registering")
     else:
         flash("You've already registered. Please log-in.")
 
-    return redirect("/user_info/" + str(user_id))
-
+    return redirect("/users/" + str(user_id))
 
 
 @app.route('/logout')
