@@ -3,7 +3,39 @@
 {% block nav_homepage %}active{% endblock %}
 
 {% block content %}
-<div id="homepage">
-<h2>Hey Congress!</h2>
+<div class="container-fluid">
+    
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+            <img class="myImg" border="0" src="./static/images/capital.png" alt="Capitol" width="100%">
+            <h2>Hey Congress!</h2>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+            <h2>Sign Up</h2>
+            <p> Create an account to start communicating with your senator</p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+            <form action='/register' method='POST' id='registration' class='user-info'>
+                username: <input type='text' name='username' id='username'><br>
+                password: <input type='password' name='password' id='password'><br>
+                e-mail: <input type='text' name='e-mail' id='e-mail'><br><br>
+                zip: <input type='text' name='zip' id='zip'><br>
+                voter id# <input type='text' name='voter_id' id='voter_id'><br>
+                <input type='submit' value='Submit'>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-12 col-lg-12" align="center">
+            <p>Already a user? Please <a href="/login">sign in</a></p>
+
+</div>
+
+<script src='/static/validate_registration.js'></script>
 {% endblock %}
