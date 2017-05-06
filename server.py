@@ -90,7 +90,7 @@ def login_process():
         return redirect("/login")
 
     else:
-        session['user_id'] = "logged in"
+        session['user_id'] = "logged_in"
         user_id = user_email.user_id
         flash("Logged in.")
 
@@ -112,11 +112,8 @@ def login_process():
 def logout_process():
     """logout the user by removing their info from the session"""
 
-    if 'user_id' in session:
-        del session['user_id']
-        flash('logged out')
-    else:
-        flash('not logged in')
+    del session['user_id']
+    flash('logged out')
 
     return redirect('/login')
 
