@@ -2,9 +2,9 @@
 
 Impact Hackathon hosted by General Assembly.
 
-:star: Winner of Best Overall :star:
+:star: Winner, Best Overall :star:
 
-Team Members: Peter, Zoe, Rocio, Kurt Bodden, Sam
+Team Members: Peter Travis, Zoe Shirah Gotch-Strain, Rocio, Kurt Bodden, Sam Colman
 
 Problem Statement: How do we create a better connection between members of Congress and the general public?
 
