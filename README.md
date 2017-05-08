@@ -4,7 +4,7 @@ Impact Hackathon hosted by General Assembly.
 
 :star: Winner, Best Overall :star:
 
-Team Members: Peter Travis, Zoe Shirah Gotch-Strain, Rocio, Kurt Bodden, Sam Colman
+Team Members: Peter Travis, Zoe Shirah Gotch-Strain, Rocio, Kurt Bodden, Sam Colman, and Kathryn Rowe
 
 Problem Statement: How do we create a better connection between members of Congress and the general public?
 
@@ -21,19 +21,19 @@ Data and APIs: Data.gov, hoping to use Pro Publica API, but could not get API ke
 
 Homepage: sign-up or sign-in to directly see your Representatives.
 
-![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/_readme-img/homepage.jpg "Homepage")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/homepage.jpg "Homepage")
 
 Complete survey to vote on issues that matter to you.
 
-![alt text](https://github.com/kathryn-rowe/Tell-Me-About-the-Birds/blob/master/static/images/_readme-img/data_page.jpg "Data Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Voting%20Page.png "Issues Page")
 
 Vote on upcoming legislation.
 
-![alt text](https://github.com/kathryn-rowe/Tell-Me-About-the-Birds/blob/master/static/images/_readme-img/data_page.jpg "Data Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Voting%20Page-3.png "Vote Page")
 
 See how other consituents in your district voted.
 
-![alt text](https://github.com/kathryn-rowe/Tell-Me-About-the-Birds/blob/master/static/images/_readme-img/data_page.jpg "Data Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Results.png "Results Page")
 
 ### Setup/Installation
 
@@ -57,7 +57,7 @@ Install dependencies:
 ```sh
 $ pip install -r requirements.txt
 ```
-Gather necessary secret keys Flask. Save to your secrets file. Source secrets to env.
+Create necessary secret keys for Flask. Save to secrets file and source secrets to env.
 
 Create database 'voter_data'
 ```sh
