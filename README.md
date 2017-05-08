@@ -25,15 +25,15 @@ Homepage: sign-up or sign-in to directly see your Representatives.
 
 Complete survey to vote on issues that matter to you.
 
-![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Voting%20Page.png "Issues Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/voting_page.jpg "Issues Page")
 
 Vote on upcoming legislation.
 
-![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Voting%20Page-3.png "Vote Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/voting_page3.jpg "Vote Page")
 
 See how other consituents in your district voted.
 
-![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/Results.png "Results Page")
+![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/results.jpg "Results Page")
 
 ### Setup/Installation
 
@@ -57,8 +57,10 @@ Install dependencies:
 ```sh
 $ pip install -r requirements.txt
 ```
-Create necessary secret keys for Flask. Save to secrets file and source secrets to env.
-
+Create necessary secret keys for Flask. Save to secrets file and source secrets to env. Add to .gitignore
+```sh
+$ source secrets.sh
+```
 Create database 'voter_data'
 ```sh
 $ createdb voter_data
@@ -74,7 +76,7 @@ $ python -i model.py
 
 ### Todos
 
- - We finished design process of project, but not full implementation. 
+ - We finished the project's design process, but not full implementation. 
  - Write tests.
 
 Other goals for project:
@@ -89,7 +91,7 @@ Other goals for project:
 License
 ----
 
-Copyright 2017 Kathryn Rowe
+Copyright 2017 Peter Travis, Zoe Shirah Gotch-Strain, Rocio, Kurt Bodden, Sam Colman, and Kathryn Rowe
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
@@ -100,6 +102,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-
-   [ebird]: <http://ebird.org/content/ebird/>
 
