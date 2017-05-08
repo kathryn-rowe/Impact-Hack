@@ -8,14 +8,14 @@ Team Members: Peter Travis, Zoe Shirah Gotch-Strain, Rocio, Kurt Bodden, Sam Col
 
 Problem Statement: How do we create a better connection between members of Congress and the general public?
 
-We created a central platform where Voters can inform themselves and express opinons about upcoming legislation. It is also a place where Representatives can directly see the desires of their constituents. After a bill is passed or defeated, voters can hold their representatives accountable and compare their views.
+We created a central platform where Voters can inform themselves and express opinions about upcoming legislation. It is also a place where Representatives can directly see the desires of their constituents. After a bill is passed or defeated, voters can hold their representatives accountable and compare their views.
 
 # Tech stack
 Backend: Python, Flask, PostgreSQL
 
 Frontend: HTML5, CSS, Bootstrap
 
-Data and APIs: Data.gov, hoping to use Pro Publica API, but could not get API key in one day.
+Data and APIs: Data.gov, hoping to use ProPublica API, but could not get API key in one day.
 
 ## Features
 
@@ -31,7 +31,7 @@ Vote on upcoming legislation.
 
 ![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/voting_page3.jpg "Vote Page")
 
-See how other consituents in your district voted.
+See how other constituents in your district voted.
 
 ![alt text](https://github.com/kathryn-rowe/Impact-Hack/blob/master/static/images/results.jpg "Results Page")
 
